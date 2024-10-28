@@ -1,0 +1,334 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name AgmaSdkIos
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import AdSupport
+import AppTrackingTransparency
+import Combine
+import Foundation
+import Foundation/*.Data*/
+import Swift
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import os.log
+import os
+import zlib
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class AgmaSdk : ObjectiveC.NSObject {
+  public static let defaultFlushThreshold: Swift.Int
+  @objc public class Config : ObjectiveC.NSObject {
+    final public let code: Swift.String
+    final public let serverUrl: Foundation.URL
+    public var consentString: Swift.String?
+    public var app: AgmaSdkIos.Ortb2.App?
+    public var user: AgmaSdkIos.Ortb2.User?
+    public var flushThreshold: Swift.Int
+    public var enforceAgmaVendor: Swift.Bool
+    public var loggingEnabled: Swift.Bool
+    @objc public init(code: Swift.String, serverUrl: Foundation.URL? = nil, consentString: Swift.String? = nil, app: AgmaSdkIos.Ortb2.App? = nil, user: AgmaSdkIos.Ortb2.User? = nil, flushThreshold: Swift.Int = defaultFlushThreshold, enforceAgmaVendor: Swift.Bool = true, loggingEnabled: Swift.Bool = false)
+    @objc public init(code: Swift.String, consentString: Swift.String? = nil, app: AgmaSdkIos.Ortb2.App? = nil, user: AgmaSdkIos.Ortb2.User? = nil)
+    @objc deinit
+  }
+  public enum Error : Swift.Error {
+    case consentStringProhibitsAgmaUsage
+    case sdkNotConfigured
+    public static func == (a: AgmaSdkIos.AgmaSdk.Error, b: AgmaSdkIos.AgmaSdk.Error) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @objc @_Concurrency.MainActor public static var shared: AgmaSdkIos.AgmaSdk {
+    get
+  }
+  @objc @_Concurrency.MainActor public init(config: AgmaSdkIos.AgmaSdk.Config, urlSession: Foundation.URLSession = .shared, userDefaults: Foundation.UserDefaults = .standard, dispatchQueue: Dispatch.DispatchQueue = DispatchQueue(label: "agma_prebid_operations", qos: .background))
+  @objc @_Concurrency.MainActor public init(config: AgmaSdkIos.AgmaSdk.Config)
+  @objc deinit
+}
+@objc extension AgmaSdkIos.AgmaSdk {
+  @objc dynamic public func setConfig(_ config: AgmaSdkIos.AgmaSdk.Config)
+  @objc dynamic public func setConsentString(_ value: Swift.String?)
+  @objc dynamic public func setApp(_ app: AgmaSdkIos.Ortb2.App?)
+  @objc dynamic public func setUser(_ user: AgmaSdkIos.Ortb2.User?)
+}
+@objc extension AgmaSdkIos.AgmaSdk {
+  @objc dynamic public func applicationWillResignActive()
+  @objc dynamic public func sceneWillResignActive()
+}
+extension AgmaSdkIos.AgmaSdk : AgmaSdkIos.AgmaSdkEventReceiving {
+  @objc dynamic public func didReceivePrebid(request: Foundation.Data?, response: Foundation.Data?)
+  @objc dynamic public func triggerEvent(app: AgmaSdkIos.Ortb2.App? = nil, user: AgmaSdkIos.Ortb2.User? = nil)
+}
+public protocol AgmaSdkEventReceiving {
+  func didReceivePrebid(request: Foundation.Data?, response: Foundation.Data?)
+  func triggerEvent(app: AgmaSdkIos.Ortb2.App?, user: AgmaSdkIos.Ortb2.User?)
+}
+@objc public enum QueueFlushResult : Swift.Int, Swift.Equatable {
+  case success
+  case failureThresholdNotReached
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@frozen public struct AnyCodable : Swift.Codable {
+  public let value: Any
+  public init<T>(_ value: T?)
+}
+extension AgmaSdkIos.AnyCodable : AgmaSdkIos._AnyEncodable, AgmaSdkIos._AnyDecodable {
+}
+extension AgmaSdkIos.AnyCodable : Swift.Equatable {
+  public static func == (lhs: AgmaSdkIos.AnyCodable, rhs: AgmaSdkIos.AnyCodable) -> Swift.Bool
+}
+extension AgmaSdkIos.AnyCodable : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension AgmaSdkIos.AnyCodable : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+extension AgmaSdkIos.AnyCodable : Swift.ExpressibleByNilLiteral {
+}
+extension AgmaSdkIos.AnyCodable : Swift.ExpressibleByBooleanLiteral {
+  public typealias BooleanLiteralType = Swift.Bool
+}
+extension AgmaSdkIos.AnyCodable : Swift.ExpressibleByIntegerLiteral {
+  public typealias IntegerLiteralType = Swift.Int
+}
+extension AgmaSdkIos.AnyCodable : Swift.ExpressibleByFloatLiteral {
+  public typealias FloatLiteralType = Swift.Double
+}
+extension AgmaSdkIos.AnyCodable : Swift.ExpressibleByStringLiteral {
+  public typealias ExtendedGraphemeClusterLiteralType = Swift.String
+  public typealias StringLiteralType = Swift.String
+  public typealias UnicodeScalarLiteralType = Swift.String
+}
+extension AgmaSdkIos.AnyCodable : Swift.ExpressibleByStringInterpolation {
+  public typealias StringInterpolation = Swift.DefaultStringInterpolation
+}
+extension AgmaSdkIos.AnyCodable : Swift.ExpressibleByArrayLiteral {
+  public typealias ArrayLiteralElement = Any
+}
+extension AgmaSdkIos.AnyCodable : Swift.ExpressibleByDictionaryLiteral {
+  public typealias Key = Swift.AnyHashable
+  public typealias Value = Any
+}
+extension AgmaSdkIos.AnyCodable : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@frozen public struct AnyDecodable : Swift.Decodable {
+  public let value: Any
+  public init<T>(_ value: T?)
+}
+@usableFromInline
+internal protocol _AnyDecodable {
+  var value: Any { get }
+  init<T>(_ value: T?)
+}
+extension AgmaSdkIos.AnyDecodable : AgmaSdkIos._AnyDecodable {
+}
+extension AgmaSdkIos._AnyDecodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension AgmaSdkIos.AnyDecodable : Swift.Equatable {
+  public static func == (lhs: AgmaSdkIos.AnyDecodable, rhs: AgmaSdkIos.AnyDecodable) -> Swift.Bool
+}
+extension AgmaSdkIos.AnyDecodable : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension AgmaSdkIos.AnyDecodable : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+extension AgmaSdkIos.AnyDecodable : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@frozen public struct AnyEncodable : Swift.Encodable {
+  public let value: Any
+  public init<T>(_ value: T?)
+}
+@usableFromInline
+internal protocol _AnyEncodable {
+  var value: Any { get }
+  init<T>(_ value: T?)
+}
+extension AgmaSdkIos.AnyEncodable : AgmaSdkIos._AnyEncodable {
+}
+extension AgmaSdkIos._AnyEncodable {
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+extension AgmaSdkIos.AnyEncodable : Swift.Equatable {
+  public static func == (lhs: AgmaSdkIos.AnyEncodable, rhs: AgmaSdkIos.AnyEncodable) -> Swift.Bool
+}
+extension AgmaSdkIos.AnyEncodable : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension AgmaSdkIos.AnyEncodable : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+extension AgmaSdkIos.AnyEncodable : Swift.ExpressibleByNilLiteral {
+}
+extension AgmaSdkIos.AnyEncodable : Swift.ExpressibleByBooleanLiteral {
+  public typealias BooleanLiteralType = Swift.Bool
+}
+extension AgmaSdkIos.AnyEncodable : Swift.ExpressibleByIntegerLiteral {
+  public typealias IntegerLiteralType = Swift.Int
+}
+extension AgmaSdkIos.AnyEncodable : Swift.ExpressibleByFloatLiteral {
+  public typealias FloatLiteralType = Swift.Double
+}
+extension AgmaSdkIos.AnyEncodable : Swift.ExpressibleByStringLiteral {
+  public typealias ExtendedGraphemeClusterLiteralType = Swift.String
+  public typealias StringLiteralType = Swift.String
+  public typealias UnicodeScalarLiteralType = Swift.String
+}
+extension AgmaSdkIos.AnyEncodable : Swift.ExpressibleByStringInterpolation {
+  public typealias StringInterpolation = Swift.DefaultStringInterpolation
+}
+extension AgmaSdkIos.AnyEncodable : Swift.ExpressibleByArrayLiteral {
+  public typealias ArrayLiteralElement = Any
+}
+extension AgmaSdkIos.AnyEncodable : Swift.ExpressibleByDictionaryLiteral {
+  public typealias Key = Swift.AnyHashable
+  public typealias Value = Any
+}
+extension AgmaSdkIos._AnyEncodable {
+  public init(nilLiteral _: ())
+  public init(booleanLiteral value: Swift.Bool)
+  public init(integerLiteral value: Swift.Int)
+  public init(floatLiteral value: Swift.Double)
+  public init(extendedGraphemeClusterLiteral value: Swift.String)
+  public init(stringLiteral value: Swift.String)
+  public init(arrayLiteral elements: Any...)
+  public init(dictionaryLiteral elements: (Swift.AnyHashable, Any)...)
+}
+extension AgmaSdkIos.AnyEncodable : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum Gzip {
+  public static let maxWindowBits: Swift.Int32
+}
+public struct CompressionLevel : Swift.RawRepresentable, Swift.Sendable {
+  public let rawValue: Swift.Int32
+  public static let noCompression: AgmaSdkIos.CompressionLevel
+  public static let bestSpeed: AgmaSdkIos.CompressionLevel
+  public static let bestCompression: AgmaSdkIos.CompressionLevel
+  public static let defaultCompression: AgmaSdkIos.CompressionLevel
+  public init(rawValue: Swift.Int32)
+  public init(_ rawValue: Swift.Int32)
+  public typealias RawValue = Swift.Int32
+}
+public struct GzipError : Swift.Error, Swift.Sendable {
+  public enum Kind : Swift.Equatable, Swift.Sendable {
+    case stream
+    case data
+    case memory
+    case buffer
+    case version
+    case unknown(code: Swift.Int)
+    public static func == (a: AgmaSdkIos.GzipError.Kind, b: AgmaSdkIos.GzipError.Kind) -> Swift.Bool
+  }
+  public let kind: AgmaSdkIos.GzipError.Kind
+  public let message: Swift.String
+  public var localizedDescription: Swift.String {
+    get
+  }
+}
+extension Foundation.Data {
+  public var isGzipped: Swift.Bool {
+    get
+  }
+  public func gzipped(level: AgmaSdkIos.CompressionLevel = .defaultCompression, wBits: Swift.Int32 = Gzip.maxWindowBits + 16) throws -> Foundation.Data
+  public func gunzipped(wBits: Swift.Int32 = Gzip.maxWindowBits + 32) throws -> Foundation.Data
+}
+public typealias Ext = AgmaSdkIos.AnyCodable
+@_inheritsConvenienceInitializers @objc public class Ortb2 : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension AgmaSdkIos.Ortb2 {
+  @objc public class App : ObjectiveC.NSObject, Swift.Codable {
+    final public let id: Swift.String?
+    final public let name: Swift.String?
+    final public let bundle: Swift.String?
+    final public let domain: Swift.String?
+    final public let storeurl: Swift.String?
+    final public let cat: [Swift.String]?
+    final public let sectioncat: [Swift.String]?
+    final public let pagecat: [Swift.String]?
+    final public let ver: Swift.String?
+    final public let privacypolicy: Swift.Int?
+    final public let paid: Swift.Int?
+    final public let keywords: Swift.String?
+    final public let ext: AgmaSdkIos.Ext?
+    public init(id: Swift.String?, name: Swift.String?, bundle: Swift.String?, domain: Swift.String?, storeurl: Swift.String?, cat: [Swift.String]?, sectioncat: [Swift.String]?, pagecat: [Swift.String]?, ver: Swift.String?, privacypolicy: Swift.Int?, paid: Swift.Int?, keywords: Swift.String?, ext: AgmaSdkIos.Ext?)
+    @objc deinit
+    public func encode(to encoder: any Swift.Encoder) throws
+    required public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension AgmaSdkIos.Ortb2 {
+  @_hasMissingDesignatedInitializers @objc public class Device : ObjectiveC.NSObject, Swift.Codable {
+    final public let ua: Swift.String?
+    final public let dnt: Swift.Int?
+    final public let lmt: Swift.Int?
+    final public let ip: Swift.String?
+    final public let ipv6: Swift.String?
+    final public let devicetype: Swift.Int?
+    final public let make: Swift.String?
+    final public let model: Swift.String?
+    final public let os: Swift.String?
+    final public let osv: Swift.String?
+    final public let hwv: Swift.String?
+    final public let h: Swift.Int?
+    final public let w: Swift.Int?
+    final public let ppi: Swift.Int?
+    final public let pxratio: Swift.Double?
+    final public let language: Swift.String?
+    final public let ext: AgmaSdkIos.Ext?
+    @objc deinit
+    public func encode(to encoder: any Swift.Encoder) throws
+    required public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension AgmaSdkIos.Ortb2 {
+  @objc public class User : ObjectiveC.NSObject, Swift.Codable {
+    final public let id: Swift.String?
+    final public let buyeruid: Swift.String?
+    final public let yob: Swift.Int?
+    final public let gender: Swift.String?
+    final public let keywords: Swift.String?
+    final public let customdata: Swift.String?
+    final public let ext: AgmaSdkIos.Ext?
+    public init(id: Swift.String?, buyeruid: Swift.String?, yob: Swift.Int?, gender: Swift.String?, keywords: Swift.String?, customdata: Swift.String?, ext: AgmaSdkIos.Ext?)
+    @objc deinit
+    public func encode(to encoder: any Swift.Encoder) throws
+    required public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension AgmaSdkIos.AgmaSdk.Error : Swift.Equatable {}
+extension AgmaSdkIos.AgmaSdk.Error : Swift.Hashable {}
+extension AgmaSdkIos.QueueFlushResult : Swift.Hashable {}
+extension AgmaSdkIos.QueueFlushResult : Swift.RawRepresentable {}
