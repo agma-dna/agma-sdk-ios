@@ -13621,7 +13621,7 @@
       "kind": "StringLiteral",
       "offset": 489,
       "length": 7,
-      "value": "\"1.0.0\""
+      "value": "\"1.0.1\""
     },
     {
       "filePath": "\/Users\/kimar\/Developer\/mllrsohn\/agma-prebid-mobile-sdk\/agma-sdk-ios\/Sources\/AgmaSdkIos\/AgmaSdk.swift",
@@ -13689,21 +13689,21 @@
     {
       "filePath": "\/Users\/kimar\/Developer\/mllrsohn\/agma-prebid-mobile-sdk\/agma-sdk-ios\/Sources\/AgmaSdkIos\/AgmaSdk.swift",
       "kind": "BooleanLiteral",
-      "offset": 4196,
+      "offset": 4146,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kimar\/Developer\/mllrsohn\/agma-prebid-mobile-sdk\/agma-sdk-ios\/Sources\/AgmaSdkIos\/AgmaSdk.swift",
       "kind": "StringLiteral",
-      "offset": 5524,
+      "offset": 5496,
       "length": 24,
       "value": "\"agma_prebid_operations\""
     },
     {
       "filePath": "\/Users\/kimar\/Developer\/mllrsohn\/agma-prebid-mobile-sdk\/agma-sdk-ios\/Sources\/AgmaSdkIos\/AgmaSdk.swift",
       "kind": "BooleanLiteral",
-      "offset": 7012,
+      "offset": 6984,
       "length": 5,
       "value": "false"
     },

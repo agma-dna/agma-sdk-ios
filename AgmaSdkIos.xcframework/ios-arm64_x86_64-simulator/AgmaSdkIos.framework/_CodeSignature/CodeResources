@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		5j1ZhMr/FtQVqM9pK6PhuWr+fwM=
+		dYXghe0/Tu6N9SphB1DB+9fQjgY=
 		</data>
 		<key>Modules/AgmaSdkIos.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		ky68FcMJXE1qjOdmnQ7ARoE0oV0=
+		T2Q8TSfH6Cz6yX/IPmWyvieIJmw=
 		</data>
 		<key>Modules/AgmaSdkIos.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/AgmaSdkIos.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		xYC+oHe4IADZCu20iOaHzDjbp64=
+		mj4LcaH4b4o9lAVV7J3HIMhel4Y=
 		</data>
 		<key>Modules/AgmaSdkIos.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		ky68FcMJXE1qjOdmnQ7ARoE0oV0=
+		T2Q8TSfH6Cz6yX/IPmWyvieIJmw=
 		</data>
 		<key>Modules/AgmaSdkIos.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/AgmaSdkIos.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		6kHGYu37xnnBO+zytZqLnTNeoRc=
+		2GdwufaAWXObsfrFRifQCY+5BJA=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -66,7 +66,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PKR/1CEpQLMFHPusEnxd22fRad/vIOby4AJq9LYWYtI=
+			zt5XV8N6jnUKx8gp0VfUOwKciTTuelZG2Sn64lhJ/QQ=
 			</data>
 		</dict>
 		<key>Modules/AgmaSdkIos.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -94,14 +94,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8EKZE3CqdSLZogy8AYy2uWrRb9kW7Ny4VIJQ/JoQlSI=
+			4WUYRIwyh2Rr5g5GH1Y6jvKd1FmSDuuIzriAbB6AvZY=
 			</data>
 		</dict>
 		<key>Modules/AgmaSdkIos.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PKR/1CEpQLMFHPusEnxd22fRad/vIOby4AJq9LYWYtI=
+			zt5XV8N6jnUKx8gp0VfUOwKciTTuelZG2Sn64lhJ/QQ=
 			</data>
 		</dict>
 		<key>Modules/AgmaSdkIos.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -129,7 +129,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			d4OxkDpDElyD91vsNTGWNmg86xu9+HjgUgAWGJ6DWqc=
+			r8BEPn8wpqVKLJM03/xoLqTyLByyC8sNQIZxc8zWKi4=
 			</data>
 		</dict>
 	</dict>
