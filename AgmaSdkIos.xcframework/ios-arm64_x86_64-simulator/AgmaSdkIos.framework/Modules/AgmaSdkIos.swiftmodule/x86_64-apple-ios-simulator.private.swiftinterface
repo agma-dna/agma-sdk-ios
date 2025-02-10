@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
 // swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name AgmaSdkIos
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AdSupport
@@ -16,6 +16,7 @@ import _SwiftConcurrencyShims
 import os.log
 import os
 import zlib
+public typealias Sha256 = Swift.String
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class AgmaSdk : ObjectiveC.NSObject {
   public static let defaultFlushThreshold: Swift.Int
   @objc public class Config : ObjectiveC.NSObject {
@@ -31,9 +32,27 @@ import zlib
     @objc public init(code: Swift.String, consentString: Swift.String? = nil, app: AgmaSdkIos.Ortb2.App? = nil, user: AgmaSdkIos.Ortb2.User? = nil)
     @objc deinit
   }
+  @objc public class Id5Config : ObjectiveC.NSObject {
+    @objc public class AppConfig : ObjectiveC.NSObject {
+      final public let bundleIdentifier: Swift.String
+      final public let appVersion: Swift.String
+      final public let appName: Swift.String
+      @objc public init(bundleIdentifier: Swift.String, appVersion: Swift.String, appName: Swift.String)
+      public static func fromBundle(_ bundle: Foundation.Bundle = .main) throws -> AgmaSdkIos.AgmaSdk.Id5Config.AppConfig
+      @objc deinit
+    }
+    final public let appConfig: AgmaSdkIos.AgmaSdk.Id5Config.AppConfig
+    final public let partner: Swift.Int
+    final public let domain: Swift.String?
+    final public let hem: AgmaSdkIos.Sha256?
+    final public let phone: AgmaSdkIos.Sha256?
+    @objc public init(appConfig: AgmaSdkIos.AgmaSdk.Id5Config.AppConfig, partner: Swift.Int, domain: Swift.String?, hem: AgmaSdkIos.Sha256? = nil, phone: AgmaSdkIos.Sha256? = nil)
+    @objc deinit
+  }
   public enum Error : Swift.Error {
     case consentStringProhibitsAgmaUsage
     case sdkNotConfigured
+    case bundleValueNotFound
     public static func == (a: AgmaSdkIos.AgmaSdk.Error, b: AgmaSdkIos.AgmaSdk.Error) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
@@ -43,6 +62,7 @@ import zlib
   @objc @_Concurrency.MainActor public static var shared: AgmaSdkIos.AgmaSdk {
     get
   }
+  weak public var id5Delegate: (any AgmaSdkIos.Id5Delegate)?
   @objc @_Concurrency.MainActor public init(config: AgmaSdkIos.AgmaSdk.Config, urlSession: Foundation.URLSession = .shared, userDefaults: Foundation.UserDefaults = .standard, dispatchQueue: Dispatch.DispatchQueue = DispatchQueue(label: "agma_prebid_operations", qos: .background))
   @objc @_Concurrency.MainActor public init(config: AgmaSdkIos.AgmaSdk.Config)
   @objc deinit
@@ -52,6 +72,7 @@ import zlib
   @objc dynamic public func setConsentString(_ value: Swift.String?)
   @objc dynamic public func setApp(_ app: AgmaSdkIos.Ortb2.App?)
   @objc dynamic public func setUser(_ user: AgmaSdkIos.Ortb2.User?)
+  @objc dynamic public func setId5Config(_ config: AgmaSdkIos.AgmaSdk.Id5Config)
 }
 @objc extension AgmaSdkIos.AgmaSdk {
   @objc dynamic public func applicationWillResignActive()
@@ -263,6 +284,41 @@ extension Foundation.Data {
   public func gzipped(level: AgmaSdkIos.CompressionLevel = .defaultCompression, wBits: Swift.Int32 = Gzip.maxWindowBits + 16) throws -> Foundation.Data
   public func gunzipped(wBits: Swift.Int32 = Gzip.maxWindowBits + 32) throws -> Foundation.Data
 }
+public protocol Id5Delegate : ObjectiveC.NSObject {
+  func onId5ResponseReceived(_ response: AgmaSdkIos.Id5Response)
+}
+@_hasMissingDesignatedInitializers @objc public class Id5Response : ObjectiveC.NSObject, Swift.Codable {
+  final public let signature: Swift.String
+  final public let createdAt: Swift.String
+  final public let originalUid: Swift.String
+  final public let universalUid: Swift.String
+  final public let privacy: AgmaSdkIos.AnyCodable?
+  final public let ext: AgmaSdkIos.Ext?
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case signature
+    case createdAt
+    case originalUid
+    case universalUid
+    case privacy
+    case ext
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
 public typealias Ext = AgmaSdkIos.AnyCodable
 @_inheritsConvenienceInitializers @objc public class Ortb2 : ObjectiveC.NSObject {
   @objc override dynamic public init()
@@ -332,3 +388,6 @@ extension AgmaSdkIos.AgmaSdk.Error : Swift.Equatable {}
 extension AgmaSdkIos.AgmaSdk.Error : Swift.Hashable {}
 extension AgmaSdkIos.QueueFlushResult : Swift.Hashable {}
 extension AgmaSdkIos.QueueFlushResult : Swift.RawRepresentable {}
+extension AgmaSdkIos.Id5Response.CodingKeys : Swift.Equatable {}
+extension AgmaSdkIos.Id5Response.CodingKeys : Swift.Hashable {}
+extension AgmaSdkIos.Id5Response.CodingKeys : Swift.RawRepresentable {}
