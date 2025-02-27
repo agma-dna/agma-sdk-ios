@@ -46,7 +46,10 @@ public typealias Sha256 = Swift.String
     final public let domain: Swift.String?
     final public let hem: AgmaSdkIos.Sha256?
     final public let phone: AgmaSdkIos.Sha256?
-    @objc public init(appConfig: AgmaSdkIos.AgmaSdk.Id5Config.AppConfig, partner: Swift.Int, domain: Swift.String?, hem: AgmaSdkIos.Sha256? = nil, phone: AgmaSdkIos.Sha256? = nil)
+    public var partnerSpecificUserId: Swift.String? {
+      get
+    }
+    @objc public init(appConfig: AgmaSdkIos.AgmaSdk.Id5Config.AppConfig, partner: Swift.Int, domain: Swift.String?, hem: AgmaSdkIos.Sha256? = nil, phone: AgmaSdkIos.Sha256? = nil, partnerSpecificUserId: Swift.String? = nil)
     @objc deinit
   }
   public enum Error : Swift.Error {
@@ -73,6 +76,7 @@ public typealias Sha256 = Swift.String
   @objc dynamic public func setApp(_ app: AgmaSdkIos.Ortb2.App?)
   @objc dynamic public func setUser(_ user: AgmaSdkIos.Ortb2.User?)
   @objc dynamic public func setId5Config(_ config: AgmaSdkIos.AgmaSdk.Id5Config)
+  @objc dynamic public func setId5PartnerSpecificUserId(_ value: Swift.String?)
 }
 @objc extension AgmaSdkIos.AgmaSdk {
   @objc dynamic public func applicationWillResignActive()
@@ -346,12 +350,27 @@ extension AgmaSdkIos.Ortb2 {
   }
 }
 extension AgmaSdkIos.Ortb2 {
+  @_hasMissingDesignatedInitializers @objc public class Geo : ObjectiveC.NSObject, Swift.Codable {
+    final public let lat: Swift.Double?
+    final public let lon: Swift.Double?
+    final public let type: Swift.Int?
+    final public let accuracy: Swift.Int?
+    final public let lastfix: Swift.Int?
+    final public let country: Swift.String?
+    final public let region: Swift.String?
+    final public let regionfips104: Swift.String?
+    final public let metro: Swift.String?
+    final public let city: Swift.String?
+    final public let zip: Swift.String?
+    final public let utcoffset: Swift.Int?
+    @objc deinit
+    public func encode(to encoder: any Swift.Encoder) throws
+    required public init(from decoder: any Swift.Decoder) throws
+  }
   @_hasMissingDesignatedInitializers @objc public class Device : ObjectiveC.NSObject, Swift.Codable {
     final public let ua: Swift.String?
-    final public let dnt: Swift.Int?
+    final public let geo: AgmaSdkIos.Ortb2.Geo?
     final public let lmt: Swift.Int?
-    final public let ip: Swift.String?
-    final public let ipv6: Swift.String?
     final public let devicetype: Swift.Int?
     final public let make: Swift.String?
     final public let model: Swift.String?
@@ -362,7 +381,20 @@ extension AgmaSdkIos.Ortb2 {
     final public let w: Swift.Int?
     final public let ppi: Swift.Int?
     final public let pxratio: Swift.Double?
+    final public let js: Swift.Int?
+    final public let geofetch: Swift.Int?
+    final public let flashver: Swift.String?
     final public let language: Swift.String?
+    final public let carrier: Swift.String?
+    final public let mccmnc: Swift.String?
+    final public let connectiontype: Swift.Int?
+    final public let ifa: Swift.String?
+    final public let didsha1: Swift.String?
+    final public let didmd5: Swift.String?
+    final public let dpidsha1: Swift.String?
+    final public let dpidmd5: Swift.String?
+    final public let macsha1: Swift.String?
+    final public let macmd5: Swift.String?
     final public let ext: AgmaSdkIos.Ext?
     @objc deinit
     public func encode(to encoder: any Swift.Encoder) throws

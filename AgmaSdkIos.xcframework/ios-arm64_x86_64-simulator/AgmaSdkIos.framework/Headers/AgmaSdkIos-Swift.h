@@ -344,10 +344,12 @@ SWIFT_CLASS("_TtCC10AgmaSdkIos7AgmaSdk9Id5Config")
 ///
 /// \param phone SHA256 hash of the cleansed phone number.
 ///
+/// \param partnerSpecificUserId Partner specific user ID.
+///
 ///
 /// returns:
 /// Instance of Id5Config.
-- (nonnull instancetype)initWithAppConfig:(AppConfig * _Nonnull)appConfig partner:(NSInteger)partner domain:(NSString * _Nullable)domain hem:(NSString * _Nullable)hem phone:(NSString * _Nullable)phone OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithAppConfig:(AppConfig * _Nonnull)appConfig partner:(NSInteger)partner domain:(NSString * _Nullable)domain hem:(NSString * _Nullable)hem phone:(NSString * _Nullable)phone partnerSpecificUserId:(NSString * _Nullable)partnerSpecificUserId OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -362,11 +364,11 @@ SWIFT_CLASS("_TtCCC10AgmaSdkIos7AgmaSdk9Id5Config9AppConfig")
 
 
 
+
 @interface AgmaSdk (SWIFT_EXTENSION(AgmaSdkIos))
 - (void)applicationWillResignActive;
 - (void)sceneWillResignActive;
 @end
-
 
 @class NSData;
 
@@ -384,6 +386,7 @@ SWIFT_CLASS("_TtCCC10AgmaSdkIos7AgmaSdk9Id5Config9AppConfig")
 - (void)setUser:(User * _Nullable)user;
 /// ID5 Configuration
 - (void)setId5Config:(Id5Config * _Nonnull)config;
+- (void)setId5PartnerSpecificUserId:(NSString * _Nullable)value;
 @end
 
 
@@ -404,17 +407,6 @@ SWIFT_CLASS("_TtC10AgmaSdkIos5Ortb2")
 @end
 
 
-SWIFT_CLASS("_TtCC10AgmaSdkIos5Ortb26Device")
-@interface Device : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-@interface Ortb2 (SWIFT_EXTENSION(AgmaSdkIos))
-@end
-
-
 SWIFT_CLASS("_TtCC10AgmaSdkIos5Ortb23App")
 @interface App : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -428,6 +420,24 @@ SWIFT_CLASS("_TtCC10AgmaSdkIos5Ortb23App")
 
 SWIFT_CLASS("_TtCC10AgmaSdkIos5Ortb24User")
 @interface User : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+@interface Ortb2 (SWIFT_EXTENSION(AgmaSdkIos))
+@end
+
+
+SWIFT_CLASS("_TtCC10AgmaSdkIos5Ortb23Geo")
+@interface Geo : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtCC10AgmaSdkIos5Ortb26Device")
+@interface Device : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -793,10 +803,12 @@ SWIFT_CLASS("_TtCC10AgmaSdkIos7AgmaSdk9Id5Config")
 ///
 /// \param phone SHA256 hash of the cleansed phone number.
 ///
+/// \param partnerSpecificUserId Partner specific user ID.
+///
 ///
 /// returns:
 /// Instance of Id5Config.
-- (nonnull instancetype)initWithAppConfig:(AppConfig * _Nonnull)appConfig partner:(NSInteger)partner domain:(NSString * _Nullable)domain hem:(NSString * _Nullable)hem phone:(NSString * _Nullable)phone OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithAppConfig:(AppConfig * _Nonnull)appConfig partner:(NSInteger)partner domain:(NSString * _Nullable)domain hem:(NSString * _Nullable)hem phone:(NSString * _Nullable)phone partnerSpecificUserId:(NSString * _Nullable)partnerSpecificUserId OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -811,11 +823,11 @@ SWIFT_CLASS("_TtCCC10AgmaSdkIos7AgmaSdk9Id5Config9AppConfig")
 
 
 
+
 @interface AgmaSdk (SWIFT_EXTENSION(AgmaSdkIos))
 - (void)applicationWillResignActive;
 - (void)sceneWillResignActive;
 @end
-
 
 @class NSData;
 
@@ -833,6 +845,7 @@ SWIFT_CLASS("_TtCCC10AgmaSdkIos7AgmaSdk9Id5Config9AppConfig")
 - (void)setUser:(User * _Nullable)user;
 /// ID5 Configuration
 - (void)setId5Config:(Id5Config * _Nonnull)config;
+- (void)setId5PartnerSpecificUserId:(NSString * _Nullable)value;
 @end
 
 
@@ -853,17 +866,6 @@ SWIFT_CLASS("_TtC10AgmaSdkIos5Ortb2")
 @end
 
 
-SWIFT_CLASS("_TtCC10AgmaSdkIos5Ortb26Device")
-@interface Device : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-@interface Ortb2 (SWIFT_EXTENSION(AgmaSdkIos))
-@end
-
-
 SWIFT_CLASS("_TtCC10AgmaSdkIos5Ortb23App")
 @interface App : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -877,6 +879,24 @@ SWIFT_CLASS("_TtCC10AgmaSdkIos5Ortb23App")
 
 SWIFT_CLASS("_TtCC10AgmaSdkIos5Ortb24User")
 @interface User : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+@interface Ortb2 (SWIFT_EXTENSION(AgmaSdkIos))
+@end
+
+
+SWIFT_CLASS("_TtCC10AgmaSdkIos5Ortb23Geo")
+@interface Geo : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtCC10AgmaSdkIos5Ortb26Device")
+@interface Device : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

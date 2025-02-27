@@ -2295,9 +2295,125 @@
                 ]
               },
               {
+                "kind": "Var",
+                "name": "partnerSpecificUserId",
+                "printedName": "partnerSpecificUserId",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10AgmaSdkIos0aB0C9Id5ConfigC21partnerSpecificUserIdSSSgvp",
+                "mangledName": "$s10AgmaSdkIos0aB0C9Id5ConfigC21partnerSpecificUserIdSSSgvp",
+                "moduleName": "AgmaSdkIos",
+                "isOpen": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "SetterAccess",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10AgmaSdkIos0aB0C9Id5ConfigC21partnerSpecificUserIdSSSgvg",
+                    "mangledName": "$s10AgmaSdkIos0aB0C9Id5ConfigC21partnerSpecificUserIdSSSgvg",
+                    "moduleName": "AgmaSdkIos",
+                    "implicit": true,
+                    "isOpen": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10AgmaSdkIos0aB0C9Id5ConfigC21partnerSpecificUserIdSSSgvs",
+                    "mangledName": "$s10AgmaSdkIos0aB0C9Id5ConfigC21partnerSpecificUserIdSSSgvs",
+                    "moduleName": "AgmaSdkIos",
+                    "implicit": true,
+                    "isOpen": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10AgmaSdkIos0aB0C9Id5ConfigC21partnerSpecificUserIdSSSgvM",
+                    "mangledName": "$s10AgmaSdkIos0aB0C9Id5ConfigC21partnerSpecificUserIdSSSgvM",
+                    "moduleName": "AgmaSdkIos",
+                    "implicit": true,
+                    "isOpen": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
                 "kind": "Constructor",
                 "name": "init",
-                "printedName": "init(appConfig:partner:domain:hem:phone:)",
+                "printedName": "init(appConfig:partner:domain:hem:phone:partnerSpecificUserId:)",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -2360,13 +2476,28 @@
                     ],
                     "hasDefaultArg": true,
                     "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "hasDefaultArg": true,
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Constructor",
-                "usr": "s:10AgmaSdkIos0aB0C9Id5ConfigC03appE07partner6domain3hem5phoneA2E03AppE0C_SiSSSgA2Mtcfc",
-                "mangledName": "$s10AgmaSdkIos0aB0C9Id5ConfigC03appE07partner6domain3hem5phoneA2E03AppE0C_SiSSSgA2Mtcfc",
+                "usr": "s:10AgmaSdkIos0aB0C9Id5ConfigC03appE07partner6domain3hem5phone0G14SpecificUserIdA2E03AppE0C_SiSSSgA3Ntcfc",
+                "mangledName": "$s10AgmaSdkIos0aB0C9Id5ConfigC03appE07partner6domain3hem5phone0G14SpecificUserIdA2E03AppE0C_SiSSSgA3Ntcfc",
                 "moduleName": "AgmaSdkIos",
-                "objc_name": "initWithAppConfig:partner:domain:hem:phone:",
+                "objc_name": "initWithAppConfig:partner:domain:hem:phone:partnerSpecificUserId:",
                 "declAttributes": [
                   "AccessControl",
                   "ObjC",
@@ -3600,6 +3731,43 @@
             "declAttributes": [
               "Dynamic",
               "RawDocComment",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setId5PartnerSpecificUserId",
+            "printedName": "setId5PartnerSpecificUserId(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@AgmaSdkIos@objc(cs)AgmaSdk(im)setId5PartnerSpecificUserId:",
+            "mangledName": "$s10AgmaSdkIos0aB0C27setId5PartnerSpecificUserIdyySSSgF",
+            "moduleName": "AgmaSdkIos",
+            "isOpen": true,
+            "declAttributes": [
+              "Dynamic",
               "ObjC"
             ],
             "isFromExtension": true,
@@ -9401,7 +9569,7 @@
           {
             "kind": "Function",
             "name": "fetchUsing",
-            "printedName": "fetchUsing(_:previousResponse:gdprApplies:consentString:domain:partnerSpecificUserId:completion:)",
+            "printedName": "fetchUsing(_:previousResponse:gdprApplies:consentString:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -9433,34 +9601,6 @@
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -9525,8 +9665,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:10AgmaSdkIos9Id5ClientC10fetchUsing_16previousResponse11gdprApplies13consentString6domain21partnerSpecificUserId10completionyAA0aB0C0D6ConfigC_AA0dI0CSgSbSSSgA2RyAQ_s5Error_pSgtScMYcctF",
-            "mangledName": "$s10AgmaSdkIos9Id5ClientC10fetchUsing_16previousResponse11gdprApplies13consentString6domain21partnerSpecificUserId10completionyAA0aB0C0D6ConfigC_AA0dI0CSgSbSSSgA2RyAQ_s5Error_pSgtScMYcctF",
+            "usr": "s:10AgmaSdkIos9Id5ClientC10fetchUsing_16previousResponse11gdprApplies13consentString10completionyAA0aB0C0D6ConfigC_AA0dI0CSgSbSSSgyAO_s5Error_pSgtScMYcctF",
+            "mangledName": "$s10AgmaSdkIos9Id5ClientC10fetchUsing_16previousResponse11gdprApplies13consentString10completionyAA0aB0C0D6ConfigC_AA0dI0CSgSbSSSgyAO_s5Error_pSgtScMYcctF",
             "moduleName": "AgmaSdkIos",
             "isOpen": true,
             "declAttributes": [
@@ -16101,6 +16241,1141 @@
           },
           {
             "kind": "TypeDecl",
+            "name": "Geo",
+            "printedName": "Geo",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "lat",
+                "printedName": "lat",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10AgmaSdkIos5Ortb2C3GeoC3latSdSgvp",
+                "mangledName": "$s10AgmaSdkIos5Ortb2C3GeoC3latSdSgvp",
+                "moduleName": "AgmaSdkIos",
+                "declAttributes": [
+                  "Final",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Double?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10AgmaSdkIos5Ortb2C3GeoC3latSdSgvg",
+                    "mangledName": "$s10AgmaSdkIos5Ortb2C3GeoC3latSdSgvg",
+                    "moduleName": "AgmaSdkIos",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Final"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "lon",
+                "printedName": "lon",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10AgmaSdkIos5Ortb2C3GeoC3lonSdSgvp",
+                "mangledName": "$s10AgmaSdkIos5Ortb2C3GeoC3lonSdSgvp",
+                "moduleName": "AgmaSdkIos",
+                "declAttributes": [
+                  "Final",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Double?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10AgmaSdkIos5Ortb2C3GeoC3lonSdSgvg",
+                    "mangledName": "$s10AgmaSdkIos5Ortb2C3GeoC3lonSdSgvg",
+                    "moduleName": "AgmaSdkIos",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Final"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "type",
+                "printedName": "type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10AgmaSdkIos5Ortb2C3GeoC4typeSiSgvp",
+                "mangledName": "$s10AgmaSdkIos5Ortb2C3GeoC4typeSiSgvp",
+                "moduleName": "AgmaSdkIos",
+                "declAttributes": [
+                  "Final",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Int?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10AgmaSdkIos5Ortb2C3GeoC4typeSiSgvg",
+                    "mangledName": "$s10AgmaSdkIos5Ortb2C3GeoC4typeSiSgvg",
+                    "moduleName": "AgmaSdkIos",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Final"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "accuracy",
+                "printedName": "accuracy",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10AgmaSdkIos5Ortb2C3GeoC8accuracySiSgvp",
+                "mangledName": "$s10AgmaSdkIos5Ortb2C3GeoC8accuracySiSgvp",
+                "moduleName": "AgmaSdkIos",
+                "declAttributes": [
+                  "Final",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Int?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10AgmaSdkIos5Ortb2C3GeoC8accuracySiSgvg",
+                    "mangledName": "$s10AgmaSdkIos5Ortb2C3GeoC8accuracySiSgvg",
+                    "moduleName": "AgmaSdkIos",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Final"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "lastfix",
+                "printedName": "lastfix",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10AgmaSdkIos5Ortb2C3GeoC7lastfixSiSgvp",
+                "mangledName": "$s10AgmaSdkIos5Ortb2C3GeoC7lastfixSiSgvp",
+                "moduleName": "AgmaSdkIos",
+                "declAttributes": [
+                  "Final",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Int?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10AgmaSdkIos5Ortb2C3GeoC7lastfixSiSgvg",
+                    "mangledName": "$s10AgmaSdkIos5Ortb2C3GeoC7lastfixSiSgvg",
+                    "moduleName": "AgmaSdkIos",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Final"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "country",
+                "printedName": "country",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10AgmaSdkIos5Ortb2C3GeoC7countrySSSgvp",
+                "mangledName": "$s10AgmaSdkIos5Ortb2C3GeoC7countrySSSgvp",
+                "moduleName": "AgmaSdkIos",
+                "declAttributes": [
+                  "Final",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10AgmaSdkIos5Ortb2C3GeoC7countrySSSgvg",
+                    "mangledName": "$s10AgmaSdkIos5Ortb2C3GeoC7countrySSSgvg",
+                    "moduleName": "AgmaSdkIos",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Final"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "region",
+                "printedName": "region",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10AgmaSdkIos5Ortb2C3GeoC6regionSSSgvp",
+                "mangledName": "$s10AgmaSdkIos5Ortb2C3GeoC6regionSSSgvp",
+                "moduleName": "AgmaSdkIos",
+                "declAttributes": [
+                  "Final",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10AgmaSdkIos5Ortb2C3GeoC6regionSSSgvg",
+                    "mangledName": "$s10AgmaSdkIos5Ortb2C3GeoC6regionSSSgvg",
+                    "moduleName": "AgmaSdkIos",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Final"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "regionfips104",
+                "printedName": "regionfips104",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10AgmaSdkIos5Ortb2C3GeoC13regionfips104SSSgvp",
+                "mangledName": "$s10AgmaSdkIos5Ortb2C3GeoC13regionfips104SSSgvp",
+                "moduleName": "AgmaSdkIos",
+                "declAttributes": [
+                  "Final",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10AgmaSdkIos5Ortb2C3GeoC13regionfips104SSSgvg",
+                    "mangledName": "$s10AgmaSdkIos5Ortb2C3GeoC13regionfips104SSSgvg",
+                    "moduleName": "AgmaSdkIos",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Final"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "metro",
+                "printedName": "metro",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10AgmaSdkIos5Ortb2C3GeoC5metroSSSgvp",
+                "mangledName": "$s10AgmaSdkIos5Ortb2C3GeoC5metroSSSgvp",
+                "moduleName": "AgmaSdkIos",
+                "declAttributes": [
+                  "Final",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10AgmaSdkIos5Ortb2C3GeoC5metroSSSgvg",
+                    "mangledName": "$s10AgmaSdkIos5Ortb2C3GeoC5metroSSSgvg",
+                    "moduleName": "AgmaSdkIos",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Final"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "city",
+                "printedName": "city",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10AgmaSdkIos5Ortb2C3GeoC4citySSSgvp",
+                "mangledName": "$s10AgmaSdkIos5Ortb2C3GeoC4citySSSgvp",
+                "moduleName": "AgmaSdkIos",
+                "declAttributes": [
+                  "Final",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10AgmaSdkIos5Ortb2C3GeoC4citySSSgvg",
+                    "mangledName": "$s10AgmaSdkIos5Ortb2C3GeoC4citySSSgvg",
+                    "moduleName": "AgmaSdkIos",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Final"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "zip",
+                "printedName": "zip",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10AgmaSdkIos5Ortb2C3GeoC3zipSSSgvp",
+                "mangledName": "$s10AgmaSdkIos5Ortb2C3GeoC3zipSSSgvp",
+                "moduleName": "AgmaSdkIos",
+                "declAttributes": [
+                  "Final",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10AgmaSdkIos5Ortb2C3GeoC3zipSSSgvg",
+                    "mangledName": "$s10AgmaSdkIos5Ortb2C3GeoC3zipSSSgvg",
+                    "moduleName": "AgmaSdkIos",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Final"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "utcoffset",
+                "printedName": "utcoffset",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10AgmaSdkIos5Ortb2C3GeoC9utcoffsetSiSgvp",
+                "mangledName": "$s10AgmaSdkIos5Ortb2C3GeoC9utcoffsetSiSgvp",
+                "moduleName": "AgmaSdkIos",
+                "declAttributes": [
+                  "Final",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Int?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10AgmaSdkIos5Ortb2C3GeoC9utcoffsetSiSgvg",
+                    "mangledName": "$s10AgmaSdkIos5Ortb2C3GeoC9utcoffsetSiSgvg",
+                    "moduleName": "AgmaSdkIos",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Final"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(lat:lon:type:accuracy:lastfix:country:region:regionfips104:metro:city:zip:utcoffset:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Geo",
+                    "printedName": "AgmaSdkIos.Ortb2.Geo",
+                    "usr": "s:10AgmaSdkIos5Ortb2C3GeoC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:10AgmaSdkIos5Ortb2C3GeoC3lat3lon4type8accuracy7lastfix7country6region13regionfips1045metro4city3zip9utcoffsetAESdSg_ARSiSgA2SSSSgA5tStcfc",
+                "mangledName": "$s10AgmaSdkIos5Ortb2C3GeoC3lat3lon4type8accuracy7lastfix7country6region13regionfips1045metro4city3zip9utcoffsetAESdSg_ARSiSgA2SSSSgA5tStcfc",
+                "moduleName": "AgmaSdkIos",
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Geo",
+                    "printedName": "AgmaSdkIos.Ortb2.Geo",
+                    "usr": "s:10AgmaSdkIos5Ortb2C3GeoC"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:10AgmaSdkIos5Ortb2C3GeoCAEycfc",
+                "mangledName": "$s10AgmaSdkIos5Ortb2C3GeoCAEycfc",
+                "moduleName": "AgmaSdkIos",
+                "overriding": true,
+                "implicit": true,
+                "objc_name": "init",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC",
+                  "Override"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(from:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Geo",
+                    "printedName": "AgmaSdkIos.Ortb2.Geo",
+                    "usr": "s:10AgmaSdkIos5Ortb2C3GeoC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decoder",
+                    "printedName": "any Swift.Decoder",
+                    "usr": "s:s7DecoderP"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:10AgmaSdkIos5Ortb2C3GeoC4fromAEs7Decoder_p_tKcfc",
+                "mangledName": "$s10AgmaSdkIos5Ortb2C3GeoC4fromAEs7Decoder_p_tKcfc",
+                "moduleName": "AgmaSdkIos",
+                "implicit": true,
+                "declAttributes": [
+                  "Required"
+                ],
+                "throwing": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "encode",
+                "printedName": "encode(to:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Encoder",
+                    "printedName": "any Swift.Encoder",
+                    "usr": "s:s7EncoderP"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:10AgmaSdkIos5Ortb2C3GeoC6encode2toys7Encoder_p_tKF",
+                "mangledName": "$s10AgmaSdkIos5Ortb2C3GeoC6encode2toys7Encoder_p_tKF",
+                "moduleName": "AgmaSdkIos",
+                "implicit": true,
+                "isOpen": true,
+                "throwing": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Class",
+            "usr": "s:10AgmaSdkIos5Ortb2C3GeoC",
+            "mangledName": "$s10AgmaSdkIos5Ortb2C3GeoC",
+            "moduleName": "AgmaSdkIos",
+            "isOpen": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "superclassUsr": "c:objc(cs)NSObject",
+            "hasMissingDesignatedInitializers": true,
+            "superclassNames": [
+              "ObjectiveC.NSObject"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Decodable",
+                "printedName": "Decodable",
+                "usr": "s:Se",
+                "mangledName": "$sSe"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Encodable",
+                "printedName": "Encodable",
+                "usr": "s:SE",
+                "mangledName": "$sSE"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CVarArg",
+                "printedName": "CVarArg",
+                "usr": "s:s7CVarArgP",
+                "mangledName": "$ss7CVarArgP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "_KeyValueCodingAndObservingPublishing",
+                "printedName": "_KeyValueCodingAndObservingPublishing",
+                "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+                "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "_KeyValueCodingAndObserving",
+                "printedName": "_KeyValueCodingAndObserving",
+                "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+                "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CustomStringConvertible",
+                "printedName": "CustomStringConvertible",
+                "usr": "s:s23CustomStringConvertibleP",
+                "mangledName": "$ss23CustomStringConvertibleP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CustomDebugStringConvertible",
+                "printedName": "CustomDebugStringConvertible",
+                "usr": "s:s28CustomDebugStringConvertibleP",
+                "mangledName": "$ss28CustomDebugStringConvertibleP"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
             "name": "Device",
             "printedName": "Device",
             "children": [
@@ -16170,27 +17445,27 @@
               },
               {
                 "kind": "Var",
-                "name": "dnt",
-                "printedName": "dnt",
+                "name": "geo",
+                "printedName": "geo",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.Int?",
+                    "printedName": "AgmaSdkIos.Ortb2.Geo?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
+                        "name": "Geo",
+                        "printedName": "AgmaSdkIos.Ortb2.Geo",
+                        "usr": "s:10AgmaSdkIos5Ortb2C3GeoC"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Var",
-                "usr": "s:10AgmaSdkIos5Ortb2C6DeviceC3dntSiSgvp",
-                "mangledName": "$s10AgmaSdkIos5Ortb2C6DeviceC3dntSiSgvp",
+                "usr": "s:10AgmaSdkIos5Ortb2C6DeviceC3geoAC3GeoCSgvp",
+                "mangledName": "$s10AgmaSdkIos5Ortb2C6DeviceC3geoAC3GeoCSgvp",
                 "moduleName": "AgmaSdkIos",
                 "declAttributes": [
                   "Final",
@@ -16208,21 +17483,21 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Optional",
-                        "printedName": "Swift.Int?",
+                        "printedName": "AgmaSdkIos.Ortb2.Geo?",
                         "children": [
                           {
                             "kind": "TypeNominal",
-                            "name": "Int",
-                            "printedName": "Swift.Int",
-                            "usr": "s:Si"
+                            "name": "Geo",
+                            "printedName": "AgmaSdkIos.Ortb2.Geo",
+                            "usr": "s:10AgmaSdkIos5Ortb2C3GeoC"
                           }
                         ],
                         "usr": "s:Sq"
                       }
                     ],
                     "declKind": "Accessor",
-                    "usr": "s:10AgmaSdkIos5Ortb2C6DeviceC3dntSiSgvg",
-                    "mangledName": "$s10AgmaSdkIos5Ortb2C6DeviceC3dntSiSgvg",
+                    "usr": "s:10AgmaSdkIos5Ortb2C6DeviceC3geoAC3GeoCSgvg",
+                    "mangledName": "$s10AgmaSdkIos5Ortb2C6DeviceC3geoAC3GeoCSgvg",
                     "moduleName": "AgmaSdkIos",
                     "implicit": true,
                     "declAttributes": [
@@ -16287,134 +17562,6 @@
                     "declKind": "Accessor",
                     "usr": "s:10AgmaSdkIos5Ortb2C6DeviceC3lmtSiSgvg",
                     "mangledName": "$s10AgmaSdkIos5Ortb2C6DeviceC3lmtSiSgvg",
-                    "moduleName": "AgmaSdkIos",
-                    "implicit": true,
-                    "declAttributes": [
-                      "Final"
-                    ],
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "ip",
-                "printedName": "ip",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:10AgmaSdkIos5Ortb2C6DeviceC2ipSSSgvp",
-                "mangledName": "$s10AgmaSdkIos5Ortb2C6DeviceC2ipSSSgvp",
-                "moduleName": "AgmaSdkIos",
-                "declAttributes": [
-                  "Final",
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Swift.String?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:10AgmaSdkIos5Ortb2C6DeviceC2ipSSSgvg",
-                    "mangledName": "$s10AgmaSdkIos5Ortb2C6DeviceC2ipSSSgvg",
-                    "moduleName": "AgmaSdkIos",
-                    "implicit": true,
-                    "declAttributes": [
-                      "Final"
-                    ],
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "ipv6",
-                "printedName": "ipv6",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:10AgmaSdkIos5Ortb2C6DeviceC4ipv6SSSgvp",
-                "mangledName": "$s10AgmaSdkIos5Ortb2C6DeviceC4ipv6SSSgvp",
-                "moduleName": "AgmaSdkIos",
-                "declAttributes": [
-                  "Final",
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Swift.String?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:10AgmaSdkIos5Ortb2C6DeviceC4ipv6SSSgvg",
-                    "mangledName": "$s10AgmaSdkIos5Ortb2C6DeviceC4ipv6SSSgvg",
                     "moduleName": "AgmaSdkIos",
                     "implicit": true,
                     "declAttributes": [
@@ -17066,6 +18213,198 @@
               },
               {
                 "kind": "Var",
+                "name": "js",
+                "printedName": "js",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10AgmaSdkIos5Ortb2C6DeviceC2jsSiSgvp",
+                "mangledName": "$s10AgmaSdkIos5Ortb2C6DeviceC2jsSiSgvp",
+                "moduleName": "AgmaSdkIos",
+                "declAttributes": [
+                  "Final",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Int?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10AgmaSdkIos5Ortb2C6DeviceC2jsSiSgvg",
+                    "mangledName": "$s10AgmaSdkIos5Ortb2C6DeviceC2jsSiSgvg",
+                    "moduleName": "AgmaSdkIos",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Final"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "geofetch",
+                "printedName": "geofetch",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10AgmaSdkIos5Ortb2C6DeviceC8geofetchSiSgvp",
+                "mangledName": "$s10AgmaSdkIos5Ortb2C6DeviceC8geofetchSiSgvp",
+                "moduleName": "AgmaSdkIos",
+                "declAttributes": [
+                  "Final",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Int?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10AgmaSdkIos5Ortb2C6DeviceC8geofetchSiSgvg",
+                    "mangledName": "$s10AgmaSdkIos5Ortb2C6DeviceC8geofetchSiSgvg",
+                    "moduleName": "AgmaSdkIos",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Final"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "flashver",
+                "printedName": "flashver",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10AgmaSdkIos5Ortb2C6DeviceC8flashverSSSgvp",
+                "mangledName": "$s10AgmaSdkIos5Ortb2C6DeviceC8flashverSSSgvp",
+                "moduleName": "AgmaSdkIos",
+                "declAttributes": [
+                  "Final",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10AgmaSdkIos5Ortb2C6DeviceC8flashverSSSgvg",
+                    "mangledName": "$s10AgmaSdkIos5Ortb2C6DeviceC8flashverSSSgvg",
+                    "moduleName": "AgmaSdkIos",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Final"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
                 "name": "language",
                 "printedName": "language",
                 "children": [
@@ -17119,6 +18458,646 @@
                     "declKind": "Accessor",
                     "usr": "s:10AgmaSdkIos5Ortb2C6DeviceC8languageSSSgvg",
                     "mangledName": "$s10AgmaSdkIos5Ortb2C6DeviceC8languageSSSgvg",
+                    "moduleName": "AgmaSdkIos",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Final"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "carrier",
+                "printedName": "carrier",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10AgmaSdkIos5Ortb2C6DeviceC7carrierSSSgvp",
+                "mangledName": "$s10AgmaSdkIos5Ortb2C6DeviceC7carrierSSSgvp",
+                "moduleName": "AgmaSdkIos",
+                "declAttributes": [
+                  "Final",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10AgmaSdkIos5Ortb2C6DeviceC7carrierSSSgvg",
+                    "mangledName": "$s10AgmaSdkIos5Ortb2C6DeviceC7carrierSSSgvg",
+                    "moduleName": "AgmaSdkIos",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Final"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "mccmnc",
+                "printedName": "mccmnc",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10AgmaSdkIos5Ortb2C6DeviceC6mccmncSSSgvp",
+                "mangledName": "$s10AgmaSdkIos5Ortb2C6DeviceC6mccmncSSSgvp",
+                "moduleName": "AgmaSdkIos",
+                "declAttributes": [
+                  "Final",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10AgmaSdkIos5Ortb2C6DeviceC6mccmncSSSgvg",
+                    "mangledName": "$s10AgmaSdkIos5Ortb2C6DeviceC6mccmncSSSgvg",
+                    "moduleName": "AgmaSdkIos",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Final"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "connectiontype",
+                "printedName": "connectiontype",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10AgmaSdkIos5Ortb2C6DeviceC14connectiontypeSiSgvp",
+                "mangledName": "$s10AgmaSdkIos5Ortb2C6DeviceC14connectiontypeSiSgvp",
+                "moduleName": "AgmaSdkIos",
+                "declAttributes": [
+                  "Final",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Int?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10AgmaSdkIos5Ortb2C6DeviceC14connectiontypeSiSgvg",
+                    "mangledName": "$s10AgmaSdkIos5Ortb2C6DeviceC14connectiontypeSiSgvg",
+                    "moduleName": "AgmaSdkIos",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Final"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "ifa",
+                "printedName": "ifa",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10AgmaSdkIos5Ortb2C6DeviceC3ifaSSSgvp",
+                "mangledName": "$s10AgmaSdkIos5Ortb2C6DeviceC3ifaSSSgvp",
+                "moduleName": "AgmaSdkIos",
+                "declAttributes": [
+                  "Final",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10AgmaSdkIos5Ortb2C6DeviceC3ifaSSSgvg",
+                    "mangledName": "$s10AgmaSdkIos5Ortb2C6DeviceC3ifaSSSgvg",
+                    "moduleName": "AgmaSdkIos",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Final"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "didsha1",
+                "printedName": "didsha1",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10AgmaSdkIos5Ortb2C6DeviceC7didsha1SSSgvp",
+                "mangledName": "$s10AgmaSdkIos5Ortb2C6DeviceC7didsha1SSSgvp",
+                "moduleName": "AgmaSdkIos",
+                "declAttributes": [
+                  "Final",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10AgmaSdkIos5Ortb2C6DeviceC7didsha1SSSgvg",
+                    "mangledName": "$s10AgmaSdkIos5Ortb2C6DeviceC7didsha1SSSgvg",
+                    "moduleName": "AgmaSdkIos",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Final"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "didmd5",
+                "printedName": "didmd5",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10AgmaSdkIos5Ortb2C6DeviceC6didmd5SSSgvp",
+                "mangledName": "$s10AgmaSdkIos5Ortb2C6DeviceC6didmd5SSSgvp",
+                "moduleName": "AgmaSdkIos",
+                "declAttributes": [
+                  "Final",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10AgmaSdkIos5Ortb2C6DeviceC6didmd5SSSgvg",
+                    "mangledName": "$s10AgmaSdkIos5Ortb2C6DeviceC6didmd5SSSgvg",
+                    "moduleName": "AgmaSdkIos",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Final"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "dpidsha1",
+                "printedName": "dpidsha1",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10AgmaSdkIos5Ortb2C6DeviceC8dpidsha1SSSgvp",
+                "mangledName": "$s10AgmaSdkIos5Ortb2C6DeviceC8dpidsha1SSSgvp",
+                "moduleName": "AgmaSdkIos",
+                "declAttributes": [
+                  "Final",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10AgmaSdkIos5Ortb2C6DeviceC8dpidsha1SSSgvg",
+                    "mangledName": "$s10AgmaSdkIos5Ortb2C6DeviceC8dpidsha1SSSgvg",
+                    "moduleName": "AgmaSdkIos",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Final"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "dpidmd5",
+                "printedName": "dpidmd5",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10AgmaSdkIos5Ortb2C6DeviceC7dpidmd5SSSgvp",
+                "mangledName": "$s10AgmaSdkIos5Ortb2C6DeviceC7dpidmd5SSSgvp",
+                "moduleName": "AgmaSdkIos",
+                "declAttributes": [
+                  "Final",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10AgmaSdkIos5Ortb2C6DeviceC7dpidmd5SSSgvg",
+                    "mangledName": "$s10AgmaSdkIos5Ortb2C6DeviceC7dpidmd5SSSgvg",
+                    "moduleName": "AgmaSdkIos",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Final"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "macsha1",
+                "printedName": "macsha1",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10AgmaSdkIos5Ortb2C6DeviceC7macsha1SSSgvp",
+                "mangledName": "$s10AgmaSdkIos5Ortb2C6DeviceC7macsha1SSSgvp",
+                "moduleName": "AgmaSdkIos",
+                "declAttributes": [
+                  "Final",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10AgmaSdkIos5Ortb2C6DeviceC7macsha1SSSgvg",
+                    "mangledName": "$s10AgmaSdkIos5Ortb2C6DeviceC7macsha1SSSgvg",
+                    "moduleName": "AgmaSdkIos",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Final"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "macmd5",
+                "printedName": "macmd5",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10AgmaSdkIos5Ortb2C6DeviceC6macmd5SSSgvp",
+                "mangledName": "$s10AgmaSdkIos5Ortb2C6DeviceC6macmd5SSSgvp",
+                "moduleName": "AgmaSdkIos",
+                "declAttributes": [
+                  "Final",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10AgmaSdkIos5Ortb2C6DeviceC6macmd5SSSgvg",
+                    "mangledName": "$s10AgmaSdkIos5Ortb2C6DeviceC6macmd5SSSgvg",
                     "moduleName": "AgmaSdkIos",
                     "implicit": true,
                     "declAttributes": [
@@ -17195,7 +19174,7 @@
               {
                 "kind": "Constructor",
                 "name": "init",
-                "printedName": "init(ua:dnt:lmt:ip:ipv6:devicetype:make:model:os:osv:hwv:h:w:ppi:pxratio:language:ext:)",
+                "printedName": "init(ua:geo:lmt:devicetype:make:model:os:osv:hwv:h:w:ppi:pxratio:js:geofetch:flashver:language:carrier:mccmnc:connectiontype:ifa:didsha1:didmd5:dpidsha1:dpidmd5:macsha1:macmd5:ext:)",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -17220,13 +19199,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.Int?",
+                    "printedName": "AgmaSdkIos.Ortb2.Geo?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
+                        "name": "Geo",
+                        "printedName": "AgmaSdkIos.Ortb2.Geo",
+                        "usr": "s:10AgmaSdkIos5Ortb2C3GeoC"
                       }
                     ],
                     "usr": "s:Sq"
@@ -17241,34 +19220,6 @@
                         "name": "Int",
                         "printedName": "Swift.Int",
                         "usr": "s:Si"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
                       }
                     ],
                     "usr": "s:Sq"
@@ -17416,6 +19367,188 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
                     "printedName": "Swift.String?",
                     "children": [
                       {
@@ -17443,8 +19576,8 @@
                   }
                 ],
                 "declKind": "Constructor",
-                "usr": "s:10AgmaSdkIos5Ortb2C6DeviceC2ua3dnt3lmt2ip4ipv610devicetype4make5model2os3osv3hwv1h1w3ppi7pxratio8language3extAESSSg_SiSgAx2wx5w3XSdSgAwA10AnyCodableVSgtcfc",
-                "mangledName": "$s10AgmaSdkIos5Ortb2C6DeviceC2ua3dnt3lmt2ip4ipv610devicetype4make5model2os3osv3hwv1h1w3ppi7pxratio8language3extAESSSg_SiSgAx2wx5w3XSdSgAwA10AnyCodableVSgtcfc",
+                "usr": "s:10AgmaSdkIos5Ortb2C6DeviceC2ua3geo3lmt10devicetype4make5model2os3osv3hwv1h1w3ppi7pxratio2js8geofetch8flashver8language7carrier6mccmnc14connectiontype3ifa7didsha16didmd58dpidsha17dpidmd57macsha16macmd53extAESSSg_AC3GeoCSgSiSgA10_A6_A6_A6_A6_A6_A10_A10_A10_SdSgA10_A10_A6_A6_A6_A6_A10_A6_A6_A6_A6_A6_A6_A6_AA10AnyCodableVSgtcfc",
+                "mangledName": "$s10AgmaSdkIos5Ortb2C6DeviceC2ua3geo3lmt10devicetype4make5model2os3osv3hwv1h1w3ppi7pxratio2js8geofetch8flashver8language7carrier6mccmnc14connectiontype3ifa7didsha16didmd58dpidsha17dpidmd57macsha16macmd53extAESSSg_AC3GeoCSgSiSgA10_A6_A6_A6_A6_A6_A10_A10_A10_SdSgA10_A10_A6_A6_A6_A6_A10_A6_A6_A6_A6_A6_A6_A6_AA10AnyCodableVSgtcfc",
                 "moduleName": "AgmaSdkIos",
                 "init_kind": "Designated"
               },
@@ -21629,7 +23762,7 @@
       "kind": "StringLiteral",
       "offset": 523,
       "length": 7,
-      "value": "\"1.1.0\""
+      "value": "\"1.1.1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/agma-prebid-mobile-sdk\/agma-prebid-mobile-sdk\/agma-sdk-ios\/Sources\/AgmaSdkIos\/AgmaSdk.swift",
@@ -21746,28 +23879,28 @@
     {
       "filePath": "\/Users\/runner\/work\/agma-prebid-mobile-sdk\/agma-prebid-mobile-sdk\/agma-sdk-ios\/Sources\/AgmaSdkIos\/AgmaSdk.swift",
       "kind": "BooleanLiteral",
-      "offset": 6773,
+      "offset": 7024,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/agma-prebid-mobile-sdk\/agma-prebid-mobile-sdk\/agma-sdk-ios\/Sources\/AgmaSdkIos\/AgmaSdk.swift",
       "kind": "IntegerLiteral",
-      "offset": 8080,
+      "offset": 8331,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/agma-prebid-mobile-sdk\/agma-prebid-mobile-sdk\/agma-sdk-ios\/Sources\/AgmaSdkIos\/AgmaSdk.swift",
       "kind": "StringLiteral",
-      "offset": 8613,
+      "offset": 8864,
       "length": 24,
       "value": "\"agma_prebid_operations\""
     },
     {
       "filePath": "\/Users\/runner\/work\/agma-prebid-mobile-sdk\/agma-prebid-mobile-sdk\/agma-sdk-ios\/Sources\/AgmaSdkIos\/AgmaSdk.swift",
       "kind": "BooleanLiteral",
-      "offset": 10101,
+      "offset": 10352,
       "length": 5,
       "value": "false"
     },
@@ -21893,7 +24026,7 @@
     {
       "filePath": "\/Users\/runner\/work\/agma-prebid-mobile-sdk\/agma-prebid-mobile-sdk\/agma-sdk-ios\/Sources\/AgmaSdkIos\/Id5Client.swift",
       "kind": "StringLiteral",
-      "offset": 4253,
+      "offset": 4202,
       "length": 38,
       "value": "\"00000000-0000-0000-0000-000000000000\""
     },
