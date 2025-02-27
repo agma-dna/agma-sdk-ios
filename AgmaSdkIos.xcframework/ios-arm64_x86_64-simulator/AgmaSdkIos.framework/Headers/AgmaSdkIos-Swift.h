@@ -344,10 +344,12 @@ SWIFT_CLASS("_TtCC10AgmaSdkIos7AgmaSdk9Id5Config")
 ///
 /// \param phone SHA256 hash of the cleansed phone number.
 ///
+/// \param partnerSpecificUserId Partner specific user ID.
+///
 ///
 /// returns:
 /// Instance of Id5Config.
-- (nonnull instancetype)initWithAppConfig:(AppConfig * _Nonnull)appConfig partner:(NSInteger)partner domain:(NSString * _Nullable)domain hem:(NSString * _Nullable)hem phone:(NSString * _Nullable)phone OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithAppConfig:(AppConfig * _Nonnull)appConfig partner:(NSInteger)partner domain:(NSString * _Nullable)domain hem:(NSString * _Nullable)hem phone:(NSString * _Nullable)phone partnerSpecificUserId:(NSString * _Nullable)partnerSpecificUserId OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -384,6 +386,7 @@ SWIFT_CLASS("_TtCCC10AgmaSdkIos7AgmaSdk9Id5Config9AppConfig")
 - (void)setUser:(User * _Nullable)user;
 /// ID5 Configuration
 - (void)setId5Config:(Id5Config * _Nonnull)config;
+- (void)setId5PartnerSpecificUserId:(NSString * _Nullable)value;
 @end
 
 
@@ -793,10 +796,12 @@ SWIFT_CLASS("_TtCC10AgmaSdkIos7AgmaSdk9Id5Config")
 ///
 /// \param phone SHA256 hash of the cleansed phone number.
 ///
+/// \param partnerSpecificUserId Partner specific user ID.
+///
 ///
 /// returns:
 /// Instance of Id5Config.
-- (nonnull instancetype)initWithAppConfig:(AppConfig * _Nonnull)appConfig partner:(NSInteger)partner domain:(NSString * _Nullable)domain hem:(NSString * _Nullable)hem phone:(NSString * _Nullable)phone OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithAppConfig:(AppConfig * _Nonnull)appConfig partner:(NSInteger)partner domain:(NSString * _Nullable)domain hem:(NSString * _Nullable)hem phone:(NSString * _Nullable)phone partnerSpecificUserId:(NSString * _Nullable)partnerSpecificUserId OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -833,6 +838,7 @@ SWIFT_CLASS("_TtCCC10AgmaSdkIos7AgmaSdk9Id5Config9AppConfig")
 - (void)setUser:(User * _Nullable)user;
 /// ID5 Configuration
 - (void)setId5Config:(Id5Config * _Nonnull)config;
+- (void)setId5PartnerSpecificUserId:(NSString * _Nullable)value;
 @end
 
 

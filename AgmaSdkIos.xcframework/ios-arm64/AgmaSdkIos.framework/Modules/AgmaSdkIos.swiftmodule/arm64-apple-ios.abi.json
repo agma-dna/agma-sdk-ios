@@ -2295,9 +2295,125 @@
                 ]
               },
               {
+                "kind": "Var",
+                "name": "partnerSpecificUserId",
+                "printedName": "partnerSpecificUserId",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10AgmaSdkIos0aB0C9Id5ConfigC21partnerSpecificUserIdSSSgvp",
+                "mangledName": "$s10AgmaSdkIos0aB0C9Id5ConfigC21partnerSpecificUserIdSSSgvp",
+                "moduleName": "AgmaSdkIos",
+                "isOpen": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "SetterAccess",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10AgmaSdkIos0aB0C9Id5ConfigC21partnerSpecificUserIdSSSgvg",
+                    "mangledName": "$s10AgmaSdkIos0aB0C9Id5ConfigC21partnerSpecificUserIdSSSgvg",
+                    "moduleName": "AgmaSdkIos",
+                    "implicit": true,
+                    "isOpen": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10AgmaSdkIos0aB0C9Id5ConfigC21partnerSpecificUserIdSSSgvs",
+                    "mangledName": "$s10AgmaSdkIos0aB0C9Id5ConfigC21partnerSpecificUserIdSSSgvs",
+                    "moduleName": "AgmaSdkIos",
+                    "implicit": true,
+                    "isOpen": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10AgmaSdkIos0aB0C9Id5ConfigC21partnerSpecificUserIdSSSgvM",
+                    "mangledName": "$s10AgmaSdkIos0aB0C9Id5ConfigC21partnerSpecificUserIdSSSgvM",
+                    "moduleName": "AgmaSdkIos",
+                    "implicit": true,
+                    "isOpen": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
                 "kind": "Constructor",
                 "name": "init",
-                "printedName": "init(appConfig:partner:domain:hem:phone:)",
+                "printedName": "init(appConfig:partner:domain:hem:phone:partnerSpecificUserId:)",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -2360,13 +2476,28 @@
                     ],
                     "hasDefaultArg": true,
                     "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "hasDefaultArg": true,
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Constructor",
-                "usr": "s:10AgmaSdkIos0aB0C9Id5ConfigC03appE07partner6domain3hem5phoneA2E03AppE0C_SiSSSgA2Mtcfc",
-                "mangledName": "$s10AgmaSdkIos0aB0C9Id5ConfigC03appE07partner6domain3hem5phoneA2E03AppE0C_SiSSSgA2Mtcfc",
+                "usr": "s:10AgmaSdkIos0aB0C9Id5ConfigC03appE07partner6domain3hem5phone0G14SpecificUserIdA2E03AppE0C_SiSSSgA3Ntcfc",
+                "mangledName": "$s10AgmaSdkIos0aB0C9Id5ConfigC03appE07partner6domain3hem5phone0G14SpecificUserIdA2E03AppE0C_SiSSSgA3Ntcfc",
                 "moduleName": "AgmaSdkIos",
-                "objc_name": "initWithAppConfig:partner:domain:hem:phone:",
+                "objc_name": "initWithAppConfig:partner:domain:hem:phone:partnerSpecificUserId:",
                 "declAttributes": [
                   "AccessControl",
                   "ObjC",
@@ -3600,6 +3731,43 @@
             "declAttributes": [
               "Dynamic",
               "RawDocComment",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setId5PartnerSpecificUserId",
+            "printedName": "setId5PartnerSpecificUserId(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@AgmaSdkIos@objc(cs)AgmaSdk(im)setId5PartnerSpecificUserId:",
+            "mangledName": "$s10AgmaSdkIos0aB0C27setId5PartnerSpecificUserIdyySSSgF",
+            "moduleName": "AgmaSdkIos",
+            "isOpen": true,
+            "declAttributes": [
+              "Dynamic",
               "ObjC"
             ],
             "isFromExtension": true,
@@ -9401,7 +9569,7 @@
           {
             "kind": "Function",
             "name": "fetchUsing",
-            "printedName": "fetchUsing(_:previousResponse:gdprApplies:consentString:domain:partnerSpecificUserId:completion:)",
+            "printedName": "fetchUsing(_:previousResponse:gdprApplies:consentString:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -9433,34 +9601,6 @@
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -9525,8 +9665,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:10AgmaSdkIos9Id5ClientC10fetchUsing_16previousResponse11gdprApplies13consentString6domain21partnerSpecificUserId10completionyAA0aB0C0D6ConfigC_AA0dI0CSgSbSSSgA2RyAQ_s5Error_pSgtScMYcctF",
-            "mangledName": "$s10AgmaSdkIos9Id5ClientC10fetchUsing_16previousResponse11gdprApplies13consentString6domain21partnerSpecificUserId10completionyAA0aB0C0D6ConfigC_AA0dI0CSgSbSSSgA2RyAQ_s5Error_pSgtScMYcctF",
+            "usr": "s:10AgmaSdkIos9Id5ClientC10fetchUsing_16previousResponse11gdprApplies13consentString10completionyAA0aB0C0D6ConfigC_AA0dI0CSgSbSSSgyAO_s5Error_pSgtScMYcctF",
+            "mangledName": "$s10AgmaSdkIos9Id5ClientC10fetchUsing_16previousResponse11gdprApplies13consentString10completionyAA0aB0C0D6ConfigC_AA0dI0CSgSbSSSgyAO_s5Error_pSgtScMYcctF",
             "moduleName": "AgmaSdkIos",
             "isOpen": true,
             "declAttributes": [
@@ -21629,7 +21769,7 @@
       "kind": "StringLiteral",
       "offset": 523,
       "length": 7,
-      "value": "\"1.1.0\""
+      "value": "\"1.1.1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/agma-prebid-mobile-sdk\/agma-prebid-mobile-sdk\/agma-sdk-ios\/Sources\/AgmaSdkIos\/AgmaSdk.swift",
@@ -21746,28 +21886,28 @@
     {
       "filePath": "\/Users\/runner\/work\/agma-prebid-mobile-sdk\/agma-prebid-mobile-sdk\/agma-sdk-ios\/Sources\/AgmaSdkIos\/AgmaSdk.swift",
       "kind": "BooleanLiteral",
-      "offset": 6773,
+      "offset": 7024,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/agma-prebid-mobile-sdk\/agma-prebid-mobile-sdk\/agma-sdk-ios\/Sources\/AgmaSdkIos\/AgmaSdk.swift",
       "kind": "IntegerLiteral",
-      "offset": 8080,
+      "offset": 8331,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/agma-prebid-mobile-sdk\/agma-prebid-mobile-sdk\/agma-sdk-ios\/Sources\/AgmaSdkIos\/AgmaSdk.swift",
       "kind": "StringLiteral",
-      "offset": 8613,
+      "offset": 8864,
       "length": 24,
       "value": "\"agma_prebid_operations\""
     },
     {
       "filePath": "\/Users\/runner\/work\/agma-prebid-mobile-sdk\/agma-prebid-mobile-sdk\/agma-sdk-ios\/Sources\/AgmaSdkIos\/AgmaSdk.swift",
       "kind": "BooleanLiteral",
-      "offset": 10101,
+      "offset": 10352,
       "length": 5,
       "value": "false"
     },
@@ -21900,7 +22040,7 @@
     {
       "filePath": "\/Users\/runner\/work\/agma-prebid-mobile-sdk\/agma-prebid-mobile-sdk\/agma-sdk-ios\/Sources\/AgmaSdkIos\/Id5Client.swift",
       "kind": "StringLiteral",
-      "offset": 4253,
+      "offset": 4202,
       "length": 38,
       "value": "\"00000000-0000-0000-0000-000000000000\""
     },

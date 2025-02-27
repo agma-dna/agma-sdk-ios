@@ -46,7 +46,10 @@ public typealias Sha256 = Swift.String
     final public let domain: Swift.String?
     final public let hem: AgmaSdkIos.Sha256?
     final public let phone: AgmaSdkIos.Sha256?
-    @objc public init(appConfig: AgmaSdkIos.AgmaSdk.Id5Config.AppConfig, partner: Swift.Int, domain: Swift.String?, hem: AgmaSdkIos.Sha256? = nil, phone: AgmaSdkIos.Sha256? = nil)
+    public var partnerSpecificUserId: Swift.String? {
+      get
+    }
+    @objc public init(appConfig: AgmaSdkIos.AgmaSdk.Id5Config.AppConfig, partner: Swift.Int, domain: Swift.String?, hem: AgmaSdkIos.Sha256? = nil, phone: AgmaSdkIos.Sha256? = nil, partnerSpecificUserId: Swift.String? = nil)
     @objc deinit
   }
   public enum Error : Swift.Error {
@@ -73,6 +76,7 @@ public typealias Sha256 = Swift.String
   @objc dynamic public func setApp(_ app: AgmaSdkIos.Ortb2.App?)
   @objc dynamic public func setUser(_ user: AgmaSdkIos.Ortb2.User?)
   @objc dynamic public func setId5Config(_ config: AgmaSdkIos.AgmaSdk.Id5Config)
+  @objc dynamic public func setId5PartnerSpecificUserId(_ value: Swift.String?)
 }
 @objc extension AgmaSdkIos.AgmaSdk {
   @objc dynamic public func applicationWillResignActive()
