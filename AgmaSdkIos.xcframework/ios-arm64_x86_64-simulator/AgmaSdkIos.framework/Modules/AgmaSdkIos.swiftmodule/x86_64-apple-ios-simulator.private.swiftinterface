@@ -93,6 +93,7 @@ public protocol AgmaSdkEventReceiving {
 @objc public enum QueueFlushResult : Swift.Int, Swift.Equatable {
   case success
   case failureThresholdNotReached
+  case gzipFailed
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {

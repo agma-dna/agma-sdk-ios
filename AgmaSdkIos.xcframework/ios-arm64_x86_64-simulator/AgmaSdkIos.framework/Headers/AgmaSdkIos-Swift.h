@@ -445,6 +445,7 @@ SWIFT_CLASS("_TtCC10AgmaSdkIos5Ortb26Device")
 typedef SWIFT_ENUM(NSInteger, QueueFlushResult, open) {
   QueueFlushResultSuccess = 0,
   QueueFlushResultFailureThresholdNotReached = 1,
+  QueueFlushResultGzipFailed = 2,
 };
 
 
@@ -904,6 +905,7 @@ SWIFT_CLASS("_TtCC10AgmaSdkIos5Ortb26Device")
 typedef SWIFT_ENUM(NSInteger, QueueFlushResult, open) {
   QueueFlushResultSuccess = 0,
   QueueFlushResultFailureThresholdNotReached = 1,
+  QueueFlushResultGzipFailed = 2,
 };
 
 

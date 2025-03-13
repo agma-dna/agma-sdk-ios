@@ -4278,6 +4278,47 @@
             "fixedbinaryorder": 1
           },
           {
+            "kind": "Var",
+            "name": "gzipFailed",
+            "printedName": "gzipFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AgmaSdkIos.QueueFlushResult.Type) -> AgmaSdkIos.QueueFlushResult",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "QueueFlushResult",
+                    "printedName": "AgmaSdkIos.QueueFlushResult",
+                    "usr": "c:@M@AgmaSdkIos@E@QueueFlushResult"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AgmaSdkIos.QueueFlushResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "QueueFlushResult",
+                        "printedName": "AgmaSdkIos.QueueFlushResult",
+                        "usr": "c:@M@AgmaSdkIos@E@QueueFlushResult"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AgmaSdkIos@E@QueueFlushResult@QueueFlushResultGzipFailed",
+            "mangledName": "$s10AgmaSdkIos16QueueFlushResultO10gzipFailedyA2CmF",
+            "moduleName": "AgmaSdkIos",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -9467,10 +9508,11 @@
             "usr": "s:10AgmaSdkIos9Id5ClientC15activeDataTasksSaySo012NSURLSessionG4TaskCGvp",
             "mangledName": "$s10AgmaSdkIos9Id5ClientC15activeDataTasksSaySo012NSURLSessionG4TaskCGvp",
             "moduleName": "AgmaSdkIos",
-            "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage"
+              "Final",
+              "HasStorage",
+              "Custom"
             ],
             "fixedbinaryorder": 1,
             "hasStorage": true,
@@ -9500,9 +9542,9 @@
                 "mangledName": "$s10AgmaSdkIos9Id5ClientC15activeDataTasksSaySo012NSURLSessionG4TaskCGvg",
                 "moduleName": "AgmaSdkIos",
                 "implicit": true,
-                "isOpen": true,
                 "declAttributes": [
-                  "Transparent"
+                  "Transparent",
+                  "Final"
                 ],
                 "accessorKind": "get"
               },
@@ -9536,9 +9578,9 @@
                 "mangledName": "$s10AgmaSdkIos9Id5ClientC15activeDataTasksSaySo012NSURLSessionG4TaskCGvs",
                 "moduleName": "AgmaSdkIos",
                 "implicit": true,
-                "isOpen": true,
                 "declAttributes": [
-                  "Transparent"
+                  "Transparent",
+                  "Final"
                 ],
                 "accessorKind": "set"
               },
@@ -9558,13 +9600,40 @@
                 "mangledName": "$s10AgmaSdkIos9Id5ClientC15activeDataTasksSaySo012NSURLSessionG4TaskCGvM",
                 "moduleName": "AgmaSdkIos",
                 "implicit": true,
-                "isOpen": true,
                 "declAttributes": [
-                  "Transparent"
+                  "Transparent",
+                  "Final"
                 ],
                 "accessorKind": "_modify"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "isCurrentlyFetching",
+            "printedName": "isCurrentlyFetching",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10AgmaSdkIos9Id5ClientC19isCurrentlyFetching33_73B0691FA5F1C6C6444B906BE7F6329CLLSbvp",
+            "mangledName": "$s10AgmaSdkIos9Id5ClientC19isCurrentlyFetching33_73B0691FA5F1C6C6444B906BE7F6329CLLSbvp",
+            "moduleName": "AgmaSdkIos",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "Custom"
+            ],
+            "fixedbinaryorder": 2,
+            "hasStorage": true
           },
           {
             "kind": "Function",
@@ -9668,8 +9737,8 @@
             "usr": "s:10AgmaSdkIos9Id5ClientC10fetchUsing_16previousResponse11gdprApplies13consentString10completionyAA0aB0C0D6ConfigC_AA0dI0CSgSbSSSgyAO_s5Error_pSgtScMYcctF",
             "mangledName": "$s10AgmaSdkIos9Id5ClientC10fetchUsing_16previousResponse11gdprApplies13consentString10completionyAA0aB0C0D6ConfigC_AA0dI0CSgSbSSSgyAO_s5Error_pSgtScMYcctF",
             "moduleName": "AgmaSdkIos",
-            "isOpen": true,
             "declAttributes": [
+              "Final",
               "Custom"
             ],
             "funcSelfKind": "NonMutating"
@@ -9679,7 +9748,9 @@
         "usr": "s:10AgmaSdkIos9Id5ClientC",
         "mangledName": "$s10AgmaSdkIos9Id5ClientC",
         "moduleName": "AgmaSdkIos",
-        "isOpen": true,
+        "declAttributes": [
+          "Final"
+        ],
         "conformances": [
           {
             "kind": "Conformance",
@@ -9694,6 +9765,13 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -14420,480 +14498,6 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "Uid",
-        "printedName": "Uid",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "id",
-            "printedName": "id",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10AgmaSdkIos3UidV2idSSvp",
-            "mangledName": "$s10AgmaSdkIos3UidV2idSSvp",
-            "moduleName": "AgmaSdkIos",
-            "declAttributes": [
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 0,
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10AgmaSdkIos3UidV2idSSvg",
-                "mangledName": "$s10AgmaSdkIos3UidV2idSSvg",
-                "moduleName": "AgmaSdkIos",
-                "implicit": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(id:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Uid",
-                "printedName": "AgmaSdkIos.Uid",
-                "usr": "s:10AgmaSdkIos3UidV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:10AgmaSdkIos3UidV2idACSS_tcfc",
-            "mangledName": "$s10AgmaSdkIos3UidV2idACSS_tcfc",
-            "moduleName": "AgmaSdkIos",
-            "implicit": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Uid",
-                "printedName": "AgmaSdkIos.Uid",
-                "usr": "s:10AgmaSdkIos3UidV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Decoder",
-                "printedName": "any Swift.Decoder",
-                "usr": "s:s7DecoderP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:10AgmaSdkIos3UidV4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s10AgmaSdkIos3UidV4fromACs7Decoder_p_tKcfc",
-            "moduleName": "AgmaSdkIos",
-            "implicit": true,
-            "throwing": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(to:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Encoder",
-                "printedName": "any Swift.Encoder",
-                "usr": "s:s7EncoderP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10AgmaSdkIos3UidV6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s10AgmaSdkIos3UidV6encode2toys7Encoder_p_tKF",
-            "moduleName": "AgmaSdkIos",
-            "implicit": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:10AgmaSdkIos3UidV",
-        "mangledName": "$s10AgmaSdkIos3UidV",
-        "moduleName": "AgmaSdkIos",
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "Eid",
-        "printedName": "Eid",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "source",
-            "printedName": "source",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10AgmaSdkIos3EidV6sourceSSvp",
-            "mangledName": "$s10AgmaSdkIos3EidV6sourceSSvp",
-            "moduleName": "AgmaSdkIos",
-            "declAttributes": [
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 0,
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10AgmaSdkIos3EidV6sourceSSvg",
-                "mangledName": "$s10AgmaSdkIos3EidV6sourceSSvg",
-                "moduleName": "AgmaSdkIos",
-                "implicit": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "uids",
-            "printedName": "uids",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[AgmaSdkIos.Uid]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Uid",
-                    "printedName": "AgmaSdkIos.Uid",
-                    "usr": "s:10AgmaSdkIos3UidV"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10AgmaSdkIos3EidV4uidsSayAA3UidVGvp",
-            "mangledName": "$s10AgmaSdkIos3EidV4uidsSayAA3UidVGvp",
-            "moduleName": "AgmaSdkIos",
-            "declAttributes": [
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 1,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[AgmaSdkIos.Uid]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Uid",
-                        "printedName": "AgmaSdkIos.Uid",
-                        "usr": "s:10AgmaSdkIos3UidV"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10AgmaSdkIos3EidV4uidsSayAA3UidVGvg",
-                "mangledName": "$s10AgmaSdkIos3EidV4uidsSayAA3UidVGvg",
-                "moduleName": "AgmaSdkIos",
-                "implicit": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[AgmaSdkIos.Uid]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Uid",
-                        "printedName": "AgmaSdkIos.Uid",
-                        "usr": "s:10AgmaSdkIos3UidV"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10AgmaSdkIos3EidV4uidsSayAA3UidVGvs",
-                "mangledName": "$s10AgmaSdkIos3EidV4uidsSayAA3UidVGvs",
-                "moduleName": "AgmaSdkIos",
-                "implicit": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10AgmaSdkIos3EidV4uidsSayAA3UidVGvM",
-                "mangledName": "$s10AgmaSdkIos3EidV4uidsSayAA3UidVGvM",
-                "moduleName": "AgmaSdkIos",
-                "implicit": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(source:uids:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Eid",
-                "printedName": "AgmaSdkIos.Eid",
-                "usr": "s:10AgmaSdkIos3EidV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[AgmaSdkIos.Uid]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Uid",
-                    "printedName": "AgmaSdkIos.Uid",
-                    "usr": "s:10AgmaSdkIos3UidV"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:10AgmaSdkIos3EidV6source4uidsACSS_SayAA3UidVGtcfc",
-            "mangledName": "$s10AgmaSdkIos3EidV6source4uidsACSS_SayAA3UidVGtcfc",
-            "moduleName": "AgmaSdkIos",
-            "implicit": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Eid",
-                "printedName": "AgmaSdkIos.Eid",
-                "usr": "s:10AgmaSdkIos3EidV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Decoder",
-                "printedName": "any Swift.Decoder",
-                "usr": "s:s7DecoderP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:10AgmaSdkIos3EidV4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s10AgmaSdkIos3EidV4fromACs7Decoder_p_tKcfc",
-            "moduleName": "AgmaSdkIos",
-            "implicit": true,
-            "throwing": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(to:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Encoder",
-                "printedName": "any Swift.Encoder",
-                "usr": "s:s7EncoderP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10AgmaSdkIos3EidV6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s10AgmaSdkIos3EidV6encode2toys7Encoder_p_tKF",
-            "moduleName": "AgmaSdkIos",
-            "implicit": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:10AgmaSdkIos3EidV",
-        "mangledName": "$s10AgmaSdkIos3EidV",
-        "moduleName": "AgmaSdkIos",
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -23762,7 +23366,7 @@
       "kind": "StringLiteral",
       "offset": 523,
       "length": 7,
-      "value": "\"1.1.1\""
+      "value": "\"1.2.0\""
     },
     {
       "filePath": "\/Users\/runner\/work\/agma-prebid-mobile-sdk\/agma-prebid-mobile-sdk\/agma-sdk-ios\/Sources\/AgmaSdkIos\/AgmaSdk.swift",
@@ -23886,21 +23490,21 @@
     {
       "filePath": "\/Users\/runner\/work\/agma-prebid-mobile-sdk\/agma-prebid-mobile-sdk\/agma-sdk-ios\/Sources\/AgmaSdkIos\/AgmaSdk.swift",
       "kind": "IntegerLiteral",
-      "offset": 8331,
+      "offset": 8341,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/agma-prebid-mobile-sdk\/agma-prebid-mobile-sdk\/agma-sdk-ios\/Sources\/AgmaSdkIos\/AgmaSdk.swift",
       "kind": "StringLiteral",
-      "offset": 8864,
+      "offset": 8874,
       "length": 24,
       "value": "\"agma_prebid_operations\""
     },
     {
       "filePath": "\/Users\/runner\/work\/agma-prebid-mobile-sdk\/agma-prebid-mobile-sdk\/agma-sdk-ios\/Sources\/AgmaSdkIos\/AgmaSdk.swift",
       "kind": "BooleanLiteral",
-      "offset": 10352,
+      "offset": 10875,
       "length": 5,
       "value": "false"
     },
@@ -23910,6 +23514,13 @@
       "offset": 180,
       "length": 26,
       "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/agma-prebid-mobile-sdk\/agma-prebid-mobile-sdk\/agma-sdk-ios\/Sources\/AgmaSdkIos\/AgmaSdkTestingDelegate.swift",
+      "kind": "IntegerLiteral",
+      "offset": 216,
+      "length": 10,
+      "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/agma-prebid-mobile-sdk\/agma-prebid-mobile-sdk\/agma-sdk-ios\/Sources\/AgmaSdkIos\/AppTrackingTransparency.swift",
@@ -24025,8 +23636,15 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/agma-prebid-mobile-sdk\/agma-prebid-mobile-sdk\/agma-sdk-ios\/Sources\/AgmaSdkIos\/Id5Client.swift",
+      "kind": "BooleanLiteral",
+      "offset": 613,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/agma-prebid-mobile-sdk\/agma-prebid-mobile-sdk\/agma-sdk-ios\/Sources\/AgmaSdkIos\/Id5Client.swift",
       "kind": "StringLiteral",
-      "offset": 4202,
+      "offset": 4698,
       "length": 38,
       "value": "\"00000000-0000-0000-0000-000000000000\""
     },
