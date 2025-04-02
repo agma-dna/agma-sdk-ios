@@ -62,12 +62,12 @@ public typealias Sha256 = Swift.String
       get
     }
   }
-  @objc @_Concurrency.MainActor public static var shared: AgmaSdkIos.AgmaSdk {
+  @objc public static var shared: AgmaSdkIos.AgmaSdk {
     get
   }
   weak public var id5Delegate: (any AgmaSdkIos.Id5Delegate)?
-  @objc @_Concurrency.MainActor public init(config: AgmaSdkIos.AgmaSdk.Config, urlSession: Foundation.URLSession = .shared, userDefaults: Foundation.UserDefaults = .standard, dispatchQueue: Dispatch.DispatchQueue = DispatchQueue(label: "agma_prebid_operations", qos: .background))
-  @objc @_Concurrency.MainActor public init(config: AgmaSdkIos.AgmaSdk.Config)
+  @objc public init(config: AgmaSdkIos.AgmaSdk.Config, urlSession: Foundation.URLSession = .shared, userDefaults: Foundation.UserDefaults = .standard, dispatchQueue: Dispatch.DispatchQueue = DispatchQueue(label: "agma_prebid_operations", qos: .background))
+  @objc public init(config: AgmaSdkIos.AgmaSdk.Config)
   @objc deinit
 }
 @objc extension AgmaSdkIos.AgmaSdk {
