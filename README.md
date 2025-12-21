@@ -13,7 +13,7 @@ https://github.com/agma-dna/agma-sdk-ios
 Or via CocoaPods by adding the dependency to your App's `Podfile` e.g.:
 
 ```ruby
-  pod 'AgmaSdkIos', :git => 'https://github.com/agma-dna/agma-sdk-ios', :tag => '1.2.2'
+  pod 'AgmaSdkIos', :git => 'https://github.com/agma-dna/agma-sdk-ios', :tag => '2.0.0'
 ```
 
 ## Documentation

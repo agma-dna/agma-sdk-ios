@@ -1,3 +1,3 @@
 # Copyright
 
-Müller & Sohn Digitalmanufaktur GmbH
+Arbeitsgemeinschaft Media-Analyse e.V. (agma)

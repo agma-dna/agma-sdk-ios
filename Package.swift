@@ -6,8 +6,7 @@ import PackageDescription
 let package = Package(
     name: "AgmaSdkIos",
     platforms: [
-        .iOS(.v12),
-        .macOS(.v10_14)
+        .iOS(.v15),
     ],
     products: [
             .library(
