@@ -14,4 +14,10 @@ Pod::Spec.new do |s|
   s.swift_version       = '5.0'
   s.ios.deployment_target = '15.0'
   s.vendored_frameworks = 'AgmaSdkIos.xcframework'
+  s.pod_target_xcconfig = {
+    'SWIFT_INCLUDE_PATHS' => '$(PODS_XCFRAMEWORKS_BUILD_DIR)/AgmaSdkIos'
+  }
+  s.user_target_xcconfig = {
+    'SWIFT_INCLUDE_PATHS' => '$(PODS_XCFRAMEWORKS_BUILD_DIR)/AgmaSdkIos'
+  }
 end
